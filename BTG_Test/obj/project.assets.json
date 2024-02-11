@@ -28083,11 +28083,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Matheus\\Desktop\\BTG_Test\\BTG_Test\\BTG_Test\\BTG_Test.csproj",
+      "projectUniqueName": "C:\\Users\\Matheus\\Desktop\\Nova pasta\\btg_test\\BTG_Test\\BTG_Test.csproj",
       "projectName": "BTG_Test",
-      "projectPath": "C:\\Users\\Matheus\\Desktop\\BTG_Test\\BTG_Test\\BTG_Test\\BTG_Test.csproj",
+      "projectPath": "C:\\Users\\Matheus\\Desktop\\Nova pasta\\btg_test\\BTG_Test\\BTG_Test.csproj",
       "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Matheus\\Desktop\\BTG_Test\\BTG_Test\\BTG_Test\\obj\\",
+      "outputPath": "C:\\Users\\Matheus\\Desktop\\Nova pasta\\btg_test\\BTG_Test\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

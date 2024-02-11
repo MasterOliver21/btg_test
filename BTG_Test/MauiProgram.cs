@@ -20,9 +20,6 @@ public static class MauiProgram
 
 		builder.Services.AddSingleton<GraphicViewModel>();
         builder.Services.AddSingleton<GraphicPage>();
-        builder.Services.AddSingleton<MainPage>();
-
-
 
         return builder.Build();
 	}

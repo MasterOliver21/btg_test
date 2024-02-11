@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+u7WGpMUdiVpBYEQ+3e60IDDyW6HN1uZ1Ky02IEu9UnoFwF9D69kbyIQHNlW56PCYI+hWpye3zgZhqw6eqTCHA==",
+  "dgSpecHash": "9LCnJZnZ3iSDxFF0LLTUpFSwb8LWAwkWoEttq7R+sbxRn51O/D06Z55hbvOLlZLh5qJNfQL6Uzl2M6s1WI279Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Matheus\\Desktop\\BTG_Test\\BTG_Test\\BTG_Test\\BTG_Test.csproj",
+  "projectFilePath": "C:\\Users\\Matheus\\Desktop\\Nova pasta\\btg_test\\BTG_Test\\BTG_Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Matheus\\.nuget\\packages\\googlegson\\2.9.0.1\\googlegson.2.9.0.1.nupkg.sha512",
     "C:\\Users\\Matheus\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
