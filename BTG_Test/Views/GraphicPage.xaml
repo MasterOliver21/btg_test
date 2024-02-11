@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Maui.Controls;assembly=SkiaSharp.Views.Maui.Controls"
+             mc:Ignorable="d"
+             x:Class="BTG_Test.Views.GraphicPage"
+             x:DataType="viewmodel:GraphicViewModel"
+             xmlns:viewmodel="clr-namespace:BTG_Test.ViewModels"
+             Padding="20"
+             Title="Brownian Motion">
+
+    <Grid ColumnDefinitions="6*, 4*" ColumnSpacing="10" x:Name="GridPrincipal">
+        <Frame Grid.Column="0" CornerRadius="10" Padding="0" x:Name="chartView">
+            <skia:SKCanvasView/>
+        </Frame>
+        <StackLayout Grid.Column="1" Spacing="10">
+            <Label Text="Preço Inicial" TextColor="White"/>
+            <Entry TextColor="White" Keyboard="Numeric" TextChanged="Numeric_Validation" Text="{Binding PrecoInicial}"/>
+            <Label Text="Volatilidade Média(%)" TextColor="White"/>
+            <Entry TextColor="White" Keyboard="Numeric" TextChanged="Numeric_Validation" Text="{Binding Volatilidade}"/>
+            <Label Text="Retorno Médio(%)" TextColor="White"/>
+            <Entry TextColor="White" Keyboard="Numeric" TextChanged="Numeric_Validation" Text="{Binding Media}"/>
+            <Label Text="Tempo(dias)" TextColor="White"/>
+            <Entry TextColor="White" Keyboard="Numeric" TextChanged="Numeric_Validation" Text="{Binding Tempo}"/>
+            <Button CornerRadius="10" Text="Simular" WidthRequest="200" TextColor="Black" FontAttributes="Bold" Clicked="Button_Clicked" Margin="10"/>
+            <ListView ItemsSource="{Binding GraphicList}" RowHeight="50" WidthRequest="200" HorizontalOptions="Start" SelectionMode="Single" ItemSelected="ListView_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="5" Padding="0" BorderColor="White" BackgroundColor="White" Margin="10">
+                                <Grid Padding="5">
+                                    <Label Text="{Binding PrecoInicial}" FontAttributes="Bold" TextColor="Black"/>
+                                </Grid>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+       
+    </Grid>
+</ContentPage>
